@@ -1,0 +1,329 @@
+@charset "UTF-8";
+/*
+Theme Name: placetech WP Template
+Description: placetech Wordpress Template
+Author: placetech Factory inc
+Author URI: https://place-tech.net
+Version: 1.0
+*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html{
+  font-size: 0.71428571vw; /*1rem = 10px*/
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+li{
+  list-style-type: none;
+}
+html {
+    scrollbar-color: #0dac67;
+    scrollbar-width: thin;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+*{
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1.6px;
+}
+.onlySP{
+  display: none;
+}
+.onlyPC{
+  display: block;
+}
+@media(max-width: 767px){
+  .onlyPC{
+    display: none;
+  }
+  .onlySP{
+    display: block;
+  }
+}
+/* html */
+html{
+  font-size: 10px; /* font-size全体調整 */
+  margin: 0 !important;
+}
+@media(max-width: 1000px){
+  html{
+    font-size: 7px;
+  }
+}
+/* root */
+:root{
+  --section-width: 1110px;
+}
+
+
+/* header */
+.l-Header{
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 90px;
+  justify-content: center;
+  background: transparent;
+}
+
+.p-Header__Container{
+  width: 1380px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.c-Header__logo > a{
+  color: white;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.p-Header__MenuWrapper{
+  display: flex;
+  gap: 25px;
+}
+
+.menu-item > a{
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* 全ページ共通パーツ（component） */
+
+
+.c-Btn{
+  width: 20rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 45px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 3rem;
+  color: white;
+  background: linear-gradient(to right, #503E30, #896B53);
+}
+
+
+
+
+
+
+/**
+  sections
+*/
+/* component */
+.c-sec-Title{
+  font-size: 3.6rem;
+  color: #503E30;
+  font-weight: bold;
+}
+.c-sec-SubTitle{
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 5px;
+  color: #503E30;
+}
+.c-sec-Txt{
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 3rem;
+}
+.c-sec-Img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* recruit-banner */
+.l-sec-RecruitBanner{
+  max-width: var(--section-width);
+  width: 77.083vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 10rem 0;
+}
+.p-sec-RecruitBanner__TextBox{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 340px;
+  background: #F7F7F7;
+}
+.p-sec-RecruitBanner__ImgBox{
+  width: 60%;
+  height: 100%;
+}
+
+/* contact */
+.l-sec-Contact{
+  background: #F7F7F7;
+  height: 36rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.p-sec-Contact__TxtBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* services */
+.l-sec-Services{
+  max-width: var(--section-width);
+  width: 77.083vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  padding: 10rem 0;
+}
+
+.p-sec-Services__TitleContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.p-sec-Service__SubTitle{
+  margin-top: 0;
+}
+
+.p-sec-ServicesContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.p-sec-Service{
+  max-width: 350px;
+  width: 24.306vw;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+@media(max-width: 1000px){
+  .p-sec-ServicesContainer{
+    justify-content: center;
+    gap: 1.736vw;
+  }
+}
+
+.c-sec-ServiceThumbnail{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 35/22;
+}
+
+.c-sec-ServiceName{
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.p-sec-ServiceTxt{
+  margin-top: 0;
+  align-self: baseline;
+}
