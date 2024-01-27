@@ -26,6 +26,16 @@ if( !function_exists('init_theme') ):
 endif;
 register_nav_menu( 'header-navigation', 'Header Navigation' );
 
+function post_has_archive( $args, $post_type ) {
+  if ( 'post' == $post_type ) {
+    $args['rewrite'] = true;
+    $args['has_archive'] = 'news'; //URLとして使いたい文字列
+  }
+  return $args;
+}
+
+add_filter( 'register_post_type_args', 'post_has_archive', 10, 2 );
+
 add_action( 'after_setup_theme', 'init_theme' );
 include 'lib/function-asset.php';
 include 'lib/function-customPost.php';

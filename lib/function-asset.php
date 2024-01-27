@@ -30,7 +30,8 @@ add_action('wp_enqueue_scripts', function() {
     $css = array(
         //'hoge' => 'hoge.css',
         'home' => 'home.css',
-        'single' => 'single.css'
+        'single' => 'single.css',
+        'archive' => 'archive.css'
     );
     foreach($css as $key => $file) {
         wp_enqueue_style("css-{$key}",  get_template_directory_uri(). "/css/{$file}", array(), null);

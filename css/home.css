@@ -4,3 +4,20 @@
   width: 100%;
   aspect-ratio: 576/307;
 }
+
+.l-CustomBanner{
+  max-width: var(--section-width);
+  width: 77.083vw;
+  aspect-ratio: 9/5;
+  margin: 0 auto;
+  padding: 10rem 0;
+  box-sizing: content-box;
+}
+
+.p-CustomBanner__TitleContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 3rem;
+}
