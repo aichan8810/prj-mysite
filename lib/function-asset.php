@@ -10,7 +10,7 @@ add_filter('style_loader_tag', function($src) {
 add_action('wp_enqueue_scripts', function() {
     // wp標準のjqueryを差し替える
     wp_deregister_script('jquery');
-    wp_enqueue_script('jquery', '//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js', array(), null, true);
+    wp_enqueue_script('jquery', '//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js', array(), null);
     // フォント
     wp_enqueue_style('fontawesome',  '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), null);
     // wp_enqueue_style('notosans',  '//fonts.googleapis.com/earlyaccess/notosansjp.css', array(), null);
@@ -22,7 +22,7 @@ add_action('wp_enqueue_scripts', function() {
         'header' => 'header.js',
     );
     foreach($js_list as $key => $file) {
-        wp_enqueue_script("js-{$key}",  get_template_directory_uri(). "/js/{$file}", array(), null, true);
+        wp_enqueue_script("js-{$key}",  get_template_directory_uri(). "/js/{$file}", array(), null);
     }
 
     // CSSの読み込み
@@ -31,7 +31,9 @@ add_action('wp_enqueue_scripts', function() {
         //'hoge' => 'hoge.css',
         'home' => 'home.css',
         'single' => 'single.css',
-        'archive' => 'archive.css'
+        'archive' => 'archive.css',
+        'page' => 'page.css',
+        'archive-news' => 'archive-news.css'
     );
     foreach($css as $key => $file) {
         wp_enqueue_style("css-{$key}",  get_template_directory_uri(). "/css/{$file}", array(), null);

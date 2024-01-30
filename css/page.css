@@ -1,0 +1,13 @@
+/* contact */
+.l-Contact__Container{
+  background: #f0f0f0;
+  padding: 10rem 0;
+}
+
+.p-Contact__Message{
+  max-width: var(--section-width);
+  width: 77.083vw;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
