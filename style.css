@@ -129,6 +129,8 @@ html{
 /* root */
 :root{
   --section-width: 1110px;
+  --sp-section-width: 89.333vw;
+
 }
 
 
@@ -149,7 +151,8 @@ html{
 }
 
 .p-Header__Container{
-  width: 1380px;
+  max-width: 1380px;
+  width: 95.833vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -203,7 +206,12 @@ html{
   background: linear-gradient(to right, #503E30, #896B53);
 }
 
-
+.c-Line{
+  width: 1px;
+  height: 75%;
+  display: block;
+  background: #B8AED5;
+}
 
 
 
@@ -404,4 +412,64 @@ html{
 }
 .p-sec-CommonPageSubName{
   color: white;
+}
+
+
+/* section__responsible */
+@media(max-width: 767px){
+  .l-sec-Services{
+    width: var(--sp-section-width);
+  }
+  .p-sec-ServicesContainer{
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  .p-sec-Service{
+    width: var(--sp-section-width);
+  }
+  .l-sec-Works{
+    height: 545px;
+    width: 100%;
+    background: #F7F7F7;
+    padding-top: 15.6rem;
+    aspect-ratio: 75/109;
+    margin-top: 15rem;
+
+  }
+
+  .p-sec-Works__ImgBox{
+    right: 0;
+    top: -60rem;
+    width: var(--sp-section-width);
+  }
+  .p-sec-Works__TxtBox{
+    height: fit-content;
+    left: 0;
+    bottom: 100px;
+    top: auto;
+    padding: 0;
+  }
+  .l-sec-RecruitBanner{
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+  .p-sec-RecruitBanner__TextBox{
+    width: 100%;
+    padding: 6rem 0;
+  }
+  .p-sec-RecruitBanner__ImgBox{
+    width: 100%;
+  }
+}
+
+@media(max-width: 500px){
+  .l-sec-Works{
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+  }
+  .p-sec-Works__TxtBox{
+    bottom: 140px;
+  }
 }

@@ -1,4 +1,10 @@
 /* mvのCSSはstyle.css384行目付近 */
+.l-MainVisual{
+  background: url(../img/mv.png) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  aspect-ratio: 576/307;
+}
 
 
 .l-CustomBanner{
@@ -17,3 +23,4 @@
   gap: 5px;
   margin-bottom: 3rem;
 }
+
