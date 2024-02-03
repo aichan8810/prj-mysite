@@ -403,9 +403,9 @@ html{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url(./img/mv.png) no-repeat center;
-  background-size: cover;
-  aspect-ratio: 6/1;
+  background: url(./img/mv.png) no-repeat center !important;
+  background-size: cover !important;
+  aspect-ratio: 6/1 !important;
 }
 .p-sec-CommonPageName{
   color: white;

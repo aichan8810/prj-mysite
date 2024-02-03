@@ -9,9 +9,9 @@
     <p class="c-sec-Txt">
     私たちと一緒に働きませんか？
     </p>
-    <a href="<?php home_url();?>/recruit" class="c-Btn">
+<!--     <a href="<?php home_url();?>/recruit" class="c-Btn">
       MORE
-    </a>
+    </a> -->
   </div>
   <div class="p-sec-RecruitBanner__ImgBox">
     <img src="<?php echo get_template_directory_uri();?>/img/recruitBanner.png" alt="recruitBanner" class="c-sec-Img">
