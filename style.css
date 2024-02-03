@@ -170,6 +170,9 @@ html{
   color: white;
   font-size: 3.5rem;
   font-weight: bold;
+  width: 130px;
+  height: 36px;
+  display: flex;
 }
 
 .p-Header__MenuWrapper{
