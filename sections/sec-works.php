@@ -16,9 +16,9 @@
     様々なジャンルのWebサイト制作が可能です。<br>
   ご購入やお申込み数の増加などを実現します！
     </p>
-    <a href="<?php home_url();?>/works" class="c-Btn">
+<!--     <a href="<?php home_url();?>/works" class="c-Btn">
       MORE
-    </a>
+    </a> -->
 
   </div>
 </section>

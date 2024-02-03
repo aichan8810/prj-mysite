@@ -14,10 +14,20 @@ function create_post_type() {
         'title',  // タイトル
         'editor', // エディター
         'thumbnail', // アイキャッチ画像
-        'revisions' // リビジョンの保存
+        'revisions', // リビジョンの保存
+        'category'
       ),
     )
   );
+  register_taxonomy(
+		'tag',
+		'works',
+		array(
+			'label' => '実績カテゴリ',
+			'rewrite' => array( 'slug' => 'works/works_cat' ),
+			'hierarchical' => false,
+		)
+	);
   register_post_type( // カスタム投稿タイプの追加関数
     'news', //カスタム投稿タイプ名（半角英数字の小文字）
     array( //オプション（以下）

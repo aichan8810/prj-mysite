@@ -33,16 +33,16 @@ if(!function_exists('placetech_pagination')):
     if(1 != $pages)
     {
       //Prev：現在のページ値が1より大きい場合は表示
-      if($paged > 1) echo "<a class=\"previouspostslink\" rel=\"prev\" href='".get_pagenum_link($paged - 1)."'><i class=\"fa fa-chevron-left\" aria-hidden=\"true\"></i></a>\n";
+      if($paged > 1) echo "<a class=\"flex items-center px-4 py-2 mx-1 text-gray-500 bg-white rounded-md cursor-not-allowed dark:bg-gray-800 dark:text-gray-600\" rel=\"prev\" href='".get_pagenum_link($paged - 1)."'>Previous</a>\n";
       for ($i=1; $i <= $pages; $i++)
       {
         if(1 != $pages &&(!($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems))
         {
-          echo ($paged == $i)? "<a class=\"current\" href='".get_pagenum_link($i)."'>".$i."</a>\n":"<a class=\"page\" href='".get_pagenum_link($i)."'>".$i."</a>\n";
+          echo ($paged == $i)? "<a class=\"items-center hidden px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md sm:flex dark:bg-gray-800 dark:text-gray-200 hover:bg-blue-600 dark:hover:bg-blue-500 hover:text-white dark:hover:text-gray-200\" href='".get_pagenum_link($i)."'>".$i."</a>\n":"<a class=\"items-center hidden px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md sm:flex dark:bg-gray-800 dark:text-gray-200 hover:bg-blue-600 dark:hover:bg-blue-500 hover:text-white dark:hover:text-gray-200\" href='".get_pagenum_link($i)."'>".$i."</a>\n";
         }
       }
 
-      if ($paged < $pages) echo "<a class=\"nextpostslink\" rel=\"next\" href=\"".get_pagenum_link($paged + 1)."\"><i class=\"fa fa-chevron-right\" aria-hidden=\"true\"></i></a>\n";
+      if ($paged < $pages) echo "<a class=\"flex items-center px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md dark:bg-gray-800 dark:text-gray-200 hover:bg-blue-600 dark:hover:bg-blue-500 hover:text-white dark:hover:text-gray-200\" rel=\"next\" href=\"".get_pagenum_link($paged + 1)."\">Next</a>\n";
     }
   }
 endif;

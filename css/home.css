@@ -1,4 +1,10 @@
 /* mvのCSSはstyle.css384行目付近 */
+.l-MainVisual{
+  background: url(../img/mv-ckisai.png) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  aspect-ratio: 576/307;
+}
 
 
 .l-CustomBanner{

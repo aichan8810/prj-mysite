@@ -36,5 +36,5 @@
       </p>
     </div>
   </div>
-  <a href="<?php home_url();?>/services" class="c-Btn">MORE</a>
+<!--   <a href="<?php home_url();?>/services" class="c-Btn">MORE</a> -->
 </section>
