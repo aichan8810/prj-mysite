@@ -34,7 +34,8 @@ add_action('wp_enqueue_scripts', function() {
         'archive' => 'archive.css',
         'page' => 'page.css',
         'archive-news' => 'archive-news.css',
-        'single-news' => 'single-news.css'
+        'single-news' => 'single-news.css',
+        'single-works' => 'single-works.css'
     );
     foreach($css as $key => $file) {
         wp_enqueue_style("css-{$key}",  get_template_directory_uri(). "/css/{$file}", array(), null);

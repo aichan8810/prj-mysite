@@ -14,7 +14,7 @@
   <?php while(have_posts()): the_post(); ?>
     <div class="p-NewsArchive__ItemWrapper">
       <a href="<?php the_permalink();?>">
-        <span class="c-NewsArchive__Date div1"><?php echo the_date();?></span>
+        <span class="c-NewsArchive__Date div1"><?php echo the_time('Y/m/d');?></span>
         <p class="c-NewsArchive__Category div2"><?php echo the_category();?></p>
         <p class="c-NewsArchive__Title div3"> <?php echo the_title();?></p>
       </a>

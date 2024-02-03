@@ -46,3 +46,12 @@
 .p-NewsArchive__ItemWrapper:hover > a{
   opacity: .8;
 }
+
+@media(max-width: 767px){
+  .p-NewsArchive__ItemWrapper{
+    padding: 0 10rem;
+    height: auto;
+    aspect-ratio: 37/4;
+  }
+
+}

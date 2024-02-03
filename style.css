@@ -132,6 +132,11 @@ html{
   --sp-section-width: 89.333vw;
 
 }
+.l-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 
 /* header */
@@ -165,6 +170,9 @@ html{
   color: white;
   font-size: 3.5rem;
   font-weight: bold;
+  width: 130px;
+  height: 36px;
+  display: flex;
 }
 
 .p-Header__MenuWrapper{
