@@ -132,6 +132,11 @@ html{
   --sp-section-width: 89.333vw;
 
 }
+.l-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 
 /* header */
